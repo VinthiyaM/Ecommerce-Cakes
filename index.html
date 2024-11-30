@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="icon" href="https://res.cloudinary.com/dgawdtjat/image/upload/v1728819576/c1_cd2uuo.jpg"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        
+        *{
+            margin:0;
+        }
+       .parent{
+        display: flex;
+        padding: 15px 3px;
+        max-width: 100wh;
+       }
+       .child1{
+        float:right;
+        width:40%;
+        margin-left: 20px;
+        font-size: 40px;
+        
+       }
+       .child1 a{
+        text-decoration: none;
+        color: deeppink;
+        
+       }
+       .child2 ul{
+        float: left;
+        display: flex;
+        margin-top: 20px;
+       }
+       .child2 ul li{
+        margin-left:  80px;
+        list-style: none;
+       }
+       .child2 ul li a{
+        text-decoration: none;
+        color: deeppink;
+       }
+       .child2 ul li hr{
+       display:none;
+       border:none;
+       background-color: rgba(255,255,255,0);
+       }
+       .child2 ul li:hover hr{
+        display:block;
+        background-color: rgb(36, 34, 34);
+        margin-top:5px;
+        border:2px;
+       }
+       .head1{
+            align-items: center;
+            background-color: deeppink;
+            color: white;
+            margin-top: 0;
+        }
+        .child3{
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url("https://res.cloudinary.com/dgawdtjat/image/upload/v1728819576/c1_cd2uuo.jpg");
+            background-repeat:no-repeat ;
+            background-size: 220vh 550px;
+           
+        }
+        .child4{
+            padding: 40px;
+        }
+        
+        .aside{
+            float: left;
+            text-align: center;
+        }
+        .child5 {
+          display: grid;
+         align-items: center; 
+         grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        background-color: rgb(240, 180, 210);
+      }
+
+     img {
+     max-width: 100%;
+    max-height:100%;
+   }
+
+  .text {
+  font-size: 70px;
+   }
+   .read{
+    background-color: deeppink;
+    color: ghostwhite;
+    border-radius: 10px;
+    margin-left: 40px;
+    height: 60px;
+    width: 150px;
+    font-size: 20px;
+   }
+   .read:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+    color: aqua;
+   }
+   .images{
+    padding: 20px;
+        display: grid;
+        color: deeppink;
+        align-items: center; 
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+         column-gap: 25px;
+   }
+   .more{
+    text-decoration: none;
+    padding: 80px;
+   }
+   .child4{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
+        padding: 20px;
+    }
+   .child6{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
+        background-color: rgb(240, 180, 210);
+        padding: 20px;
+    }
+   .cake1{
+        padding: 20px;
+        display: grid;
+        color: deeppink;
+        align-items: center; 
+        
+   }
+   .child7{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
+        padding: 20px;
+    }
+    .child8{
+        display: grid;
+        align-items: center; 
+        column-gap: 20px;
+        padding: 20px;
+        background-color: rgba(228, 141, 184, 0.637);
+    }
+    .child8 a{
+        display: none;
+    }
+    .child8 a:hower{
+       display: block;
+       color: deeppink;
+    }
+    .sweet1 a{
+        display: none;
+    }
+    .sweet1 a:hover{
+        display: block;
+       color: deeppink;
+    }
+    .cakes a{
+        text-decoration: none;
+        color: deeppink;
+       }
+       .cakes hr{
+       display:none;
+       border:none;
+       background-color: rgba(255,255,255,0);
+       }
+       .cakes:hover hr{
+        display:block;
+        background-color: rgb(28, 125, 223);
+        margin-top:5px;
+        border:2px;
+
+       }
+       .cake1:hover{
+        cursor: pointer;
+        margin-top: 5px;
+       }
+       .cake1 a{
+        color: deeppink;
+         text-decoration: none;
+       }
+       .cake1 a:hover{
+        display: block;
+        color: aqua;
+       }
+       .contact {
+            background-color: rgba(255, 20, 145, 0.548);
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgb(17, 15, 15);
+            padding: 30px;
+            padding-bottom: 30px;
+            border-radius: 25px;
+            margin-left: 500px;
+            margin-right: 300px;
+           }
+           input[type=email]{
+            padding:20px ;
+            height: 20px;
+            background-color: rgba(46, 223, 208, 0.534);
+            width: 250px;
+            margin-top: 5px;
+            padding-bottom: 20px;
+            border-radius: 15px;
+           }
+           input[type=number]{
+            height: 20px;
+            padding:20px ;
+            background-color: rgba(46, 223, 208, 0.534);
+            width: 250px;
+            margin-top: 5px;
+            align-content: center;
+            padding-bottom: 20px;
+            border-radius: 15px;
+
+           }
+           .submit{
+            margin-left: 40px;
+            border-radius: 25px;
+            height: 40px;
+            width: 200px;
+           }
+           .submit:hover{
+            cursor: pointer;
+            background-color: aqua;
+           }
+           *{
+           padding:0;
+           margin:0;
+           box-sizing:border;
+           font-family:'Poppins',sans-serif;
+           text-decoration: none;
+           list-style: none;
+           scroll-behavior: smooth;
+           }
+           .footer{
+            margin-top: 80px;
+            background-color: rgb(219, 132, 176);
+            }
+
+            .foot{
+                  padding: 20px 0;
+            }
+
+           .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+    
+              }
+
+           .footlinks h4{
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 30px;
+            position: relative;
+            }
+
+
+           .footlinks h4::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            left: 0;
+            bottom: -7px;
+            background: white;
+            }
+
+            .footlinks ul li{
+            margin-bottom: 15px;
+            list-style:none;
+           }
+
+           .footlinks ul li a{
+           font-size: 17px;
+           color: #dddddd;
+           display: block;
+           transition: ease 0.30s;
+            }
+
+           .footlinks ul li a:hover{
+            transform: translate(6px);
+            color: white;
+           }
+
+           .social a{
+           font-size: 25px;
+           margin: 4px;
+           height: 40px;
+           width: 40px;
+           color: aqua;
+            background-color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            transition: ease 0.30s;
+            }
+
+            .social a:hover{
+            transform: scale(1.2);
+             }
+
+            .end{
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 12px;
+            }
+
+            .end p{
+            font-size: 15px;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 300;
+            }
+            @media screen and (max-width: 380px){
+                .parent{
+                    max-width: 380px;
+                }
+                .child1 {
+    padding: 2rem 0.25rem 4rem;
+  }
+  .child2{
+    padding: 2rem 0.25rem 4rem;
+  }
+  .head1{
+    width: 380px;
+    font-size: 6px;
+  }
+  .contact{
+    float: left;
+    margin-left: 0;
+  }
+  .images{
+    display: grid;
+   grid-template-rows: 1fr 1fr;
+
+  }
+  .child6{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .child4{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+            }
+
+        </style>
+</head>
+<body><div class="main">
+    <h1 class="head1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★ Order by 4pm for next day delivery・(012)345-6789 ★★★</h1>
+</div>
+    <header class="header" id="header">
+        <nav class="parent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+              </button>
+            <div class="child1" id="child1">
+                <a href="#">CAKELY</a> 
+            </div>
+           
+            <div class="child2">
+                <ul>
+                    <li>
+                        <a href="#child1" class="nav__link">Home</a>
+                        <hr size="4">
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About
+                        </a><hr size="4">
+                    </li>
+                    <li>
+                        <a href="#wedding-cake" class="nav__link">Wedding&Events
+                        </a><hr size="4">
+                    </li>
+                      <li>
+                        <a href="#cakes" class="nav__link">Cakes
+                        </a><hr size="4">
+                    </li>
+                    <li>
+                        <a href="#child6" class="nav__link">Blog                            
+                        </a><hr size="4">
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact                              
+                        </a><hr size="4">
+                    </li>
+                </ul>
+            </div>
+            </nav>
+           </header>
+           <div class="child3" id="child3"><br><br>
+           <h1 style="color: deeppink;"> Cake Delivery in TamilNadu</h1> <br>
+           </div>
+           </nav><br><br>
+           <blockquote style="color: rgb(24, 6, 6); font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;Savour the taste of luxury with our delectable cakes in Tamilnadu. Perfect for any occasion, from indulgent brownies for your sweet cravings to last-minute, bespoke birthday cakes. Trust us to bring sweetness to your doorstep, every time.</blockquote>
+           
+        <p style="color: deeppink;padding: 20px;font-size: 25px;">OUR SPECIALITIES</p>
+            <div class="child4" id="wedding-cake">
+               
+                <div class="cake1">
+                    <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/cotton-candy-cake.jpg" alt="s1" height="200px" width="200px">
+                    <br><a href="Cotton Candy Cake"><span>&nbsp;&nbsp;Cotton Candy Cake</span> </a> 
+                </div>
+                <div class="cake1">
+                    <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/wedding-cake.jpg" alt="s1" height="200px" width="200px">
+                   <br><a href="Wedding&Event Cakes"><span>&nbsp;&nbsp;Wedding&Event Cakes</span> </a> 
+                    
+                </div>
+                <div class="cake1">
+                    <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/macarons.jpg" alt="s1" height="200px" width="200px">
+                    <br><a href="Macarons"><span>&nbsp;&nbsp;Macarons</span> </a> 
+                </div>
+                <div class="cake1">
+                    <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/cupcakes.jpg" alt="s1" height="200px" width="200px">
+                    <br><a href="Cupcakes"><span>&nbsp;&nbsp; Cupcakes</span> </a> 
+                </div>
+                </div><br><br>
+        <div class="child5" id="about">
+            <div>
+            <h4 class="text" style="color: rgb(241, 57, 149);">About us</h4>
+            <aside style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 25px;padding: 40px;">We specialise in creating beautiful and original cakes, cupcakes, tiered cakes, novelty cakes, macarons, and wedding cakes for all occasions, including birthdays, corporate events, and weddings.</aside>
+            <button class="read" type="menu">Read More</button>
+        </div><div>
+             <img class="img" src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/two_smiling_women_standing_in_a_bright_kitchen_behind.jpg" alt="cook" height="500px" width="600px">
+          </div>
+    </div>
+    <div id="cakes">
+      <br><br><p style="color: deeppink;padding: 20px;font-size: 25px;">CAKE COLLECTION</p>
+
+    </div>
+    <div class="images" id="cakes">
+        <div>
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728821037/c4_ncx4nn.jpg" alt="type1" height="200px" width="250px">
+            <div class="cakes">
+            <a href="Cotton candy cake">&nbsp;Cotton candy cake</a><hr size="4">
+            <p style="color: grey;">&nbsp;$45.00</p></div>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728820879/c2_uyrjpw.jpg" alt="type1" height="200px" width="250px">
+            <div class="cakes">
+            <a class="sweet1" href=" Chocolate Loverscake"><span> Chocolate Lovers cake</span></a><hr size="4">
+        <p style="color: grey;">&nbsp;$45.00</p></div>
+        </div>
+        <div>
+            <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/lemon-raspberry-cake.jpg" alt="type1" height="200px" width="250px">
+            <div class="cakes">
+            <a href="#Lemon Raspberry cake"><span>Lemon Raspberry cake</span></a><hr size="4"></div>
+        <p style="color: grey;">&nbsp;$45.00</p>
+        </div>
+        <div>
+            <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/macaron-crown-cake.jpg" alt="type1" height="200px" width="250px">
+            <div class="cakes"><a href="#Mecaron Crown cake"><span>Mecaron Crown cake</span></a><hr size="4">
+        <p style="color: grey;">&nbsp;$45.00</p></div>
+        </div>
+        <div>
+            <img src="https://s0.wp.com/wp-content/themes/pub/cakely/assets/images/caramel-crunch-cake.jpg" alt="type1" height="200px" width="250px">
+            <div class="cakes"><a href="#Caramel Crunch cake">Caramel Crunch cake</a><hr size="4">
+            <p style="color: grey;">&nbsp;$45.00</p></div>
+        </div>
+        <div id="child6">
+            <a class="more" style="color: deeppink;padding: 20px;">See<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cakes</a>
+        </div>
+    </div>
+    <br><br>
+    <div class="child6" id="child6">
+        
+        <div class="text1">
+            <p style="color: deeppink;padding: 20px;font-size: 25px;">ON THE BLOG</p>
+            <p style="font-size: 20px;">Dive into a world of inventive recipes and simple, step-by-step guides to crafting your own delightful treats. Your feedback and messages are always cherished. Enjoy exploring these delicious creations.</p><a style="color:deeppink ;"><br><br>Read All Posts</a></div>
+        <div class="cake1">
+            <img src="https://cakelydemo.wordpress.com/wp-content/uploads/2024/02/d53d9-chiai-milk-chocolate-chip-cookies.jpg?w=1024" alt="s1" height="200px" width="200px">
+            <br><a href="Chocolate Chip Cookies"><span>&nbsp;&nbsp;Chocolate Chip Cookies</span> </a> 
+        </div>
+        <div class="cake1">
+            <img src="https://cakelydemo.wordpress.com/wp-content/uploads/2024/02/cc065-rolo-chocolate-brownies.jpg?w=1024" alt="s1" height="200px" width="200px">
+           <br><a href="Rolo Chocolate Brownies"><span>&nbsp;&nbsp;Rolo Chocolate Brownies</span> </a> 
+            
+        </div>
+        <div class="cake1">
+            <img src="https://cakelydemo.wordpress.com/wp-content/uploads/2024/02/cd1f4-cinnamon-swirl-muffins.jpg?w=1024" alt="s1" height="200px" width="200px">
+            <br><a href="Cinnamon Swirl Muffins"><span>&nbsp;&nbsp;Cinnamon Swirl Muffins</span> </a> 
+        </div>
+        <div class="cake1">
+            <img src="https://cakelydemo.wordpress.com/wp-content/uploads/2024/02/728e9-peppermint-chocolate-slice.jpg?w=1024" alt="s1" height="200px" width="200px">
+            <br><a href="Peppermint Chocolate Slice"><span>&nbsp;&nbsp;Peppermint Chocolate Slice</span> </a> 
+        </div>
+    </div>
+
+    <hr>
+   
+    <br><a style="color: deeppink;padding: 20px;">FOLLOW ON INSTAGRAM</a>
+    <div class="child7">
+        <div><img src="https://scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/420845024_280005394793639_8462482515669415835_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=18de74&_nc_ohc=qgHzP9K5A_sQ7kNvgEI-yf4&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A5K1oAxkf4iJss98QaBr7e4&oh=00_AYAIGjdExi70Prf7tWyYnwntWucRAsQerrc9y8UohK9kfg&oe=67102520" alt="" height="200px" width="200px"></div>
+        <div><img src="https://scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/420167886_1463645140883360_3020003948213184846_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=3YqDzEJiNl4Q7kNvgHXzokq&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=A5K1oAxkf4iJss98QaBr7e4&oh=00_AYBIaEkFfwJ6_73YqPAfP9O2Vwx-EbFJUhdxQw3AUKscHw&oe=67104A08" alt="cake2" height="200px" width="200px"></div>
+        <div><img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728821300/c6_gk3uwb.jpg" alt="cake3" height="200px" width="200px"></div>
+        <div><img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728821512/c8_efd105.jpg" alt="cake4" height="200px" width="200px"></div>
+        <div><img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728821192/c5_jgwgyw.jpg" alt="cake5" height="200px" width="200px"></div>
+        <div><img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728821413/c7_obme9w.jpg" alt="cake5" height="200px" width="200px"></div>
+
+    </div>
+    <div class="contact" id="contact">
+        <form>
+            <h1 style="font-size: 40px;color: ghostwhite;">Contacts</h1>
+            <label for="dob">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label><br> 
+            <input type="email" id="email" value="" placeholder="Enter email address" required><br><br>
+            <label for="number">Mobile Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" id="number" value="" placeholder="Enter your Mobile Number">
+           <br><br>
+           <button class="submit" type="submit">Submit</button>
+        </form>
+
+    </div>
+   
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.linkedin.com/in/vinthiya-m-176451255/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.vinthiya.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                    <a href="https://www.github.com/VinthiyaM" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2024 Cakes All Rights Reserved.<br>Website developed by:Vinthiya Murugaiya</p>
+    </div>
+</section>
+</body>
+</html>
